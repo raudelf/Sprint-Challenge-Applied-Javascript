@@ -18,7 +18,9 @@ function Header() {
     const temp = document.createElement('span');
 
     // Nesting
-    header.appendChild(date, h, temp);
+    header.appendChild(date);
+    header.appendChild(h);
+    header.appendChild(temp);
 
     // Classes
     header.classList.add('header');
@@ -32,3 +34,6 @@ function Header() {
 
     return header;
 }
+
+const container = document.querySelector('.header-container');
+container.appendChild(Header());
